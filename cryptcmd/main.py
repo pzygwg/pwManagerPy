@@ -4,7 +4,10 @@ from PySide2.QtCore import Qt
 from PySide2.QtWidgets import QAbstractItemView
 from functools import partial
 from fonction import *
+import os
 
+if sys.platform == 'darwin':
+    os.environ['QT_MAC_WANTS_LAYER'] = '1'
 
 class MainWindow(QMainWindow):
     def __init__(self, key):
