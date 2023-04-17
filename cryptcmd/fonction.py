@@ -60,8 +60,6 @@ def ajouter_mot_de_passe_gui(key, site, parent=None):
 
     QMessageBox.information(parent, "Succès", "Mot de passe ajouté avec succès.")
 
-# ... (inclusion des autres fonctions modifiées)
-
 # Fonction pour avoir la liste des sites
 def getListeSite():
     liste = []
